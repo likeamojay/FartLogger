@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0519B924980F6F001F5854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0519B824980F6F001F5854 /* AppDelegate.swift */; };
+		1A0519BB24980F6F001F5854 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0519BA24980F6F001F5854 /* SceneDelegate.swift */; };
+		1A0519BD24980F6F001F5854 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0519BC24980F6F001F5854 /* ViewController.swift */; };
+		1A0519C024980F6F001F5854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0519BE24980F6F001F5854 /* Main.storyboard */; };
+		1A0519C324980F6F001F5854 /* FartLogger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A0519C124980F6F001F5854 /* FartLogger.xcdatamodeld */; };
+		1A0519C524980F72001F5854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0519C424980F72001F5854 /* Assets.xcassets */; };
+		1A0519C824980F72001F5854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0519C624980F72001F5854 /* LaunchScreen.storyboard */; };
+		1A0519D324980F73001F5854 /* FartLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0519D224980F73001F5854 /* FartLoggerTests.swift */; };
+		1A0519DE24980F73001F5854 /* FartLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0519DD24980F73001F5854 /* FartLoggerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A0519CF24980F73001F5854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0519AD24980F6F001F5854 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A0519B424980F6F001F5854;
+			remoteInfo = FartLogger;
+		};
+		1A0519DA24980F73001F5854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0519AD24980F6F001F5854 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A0519B424980F6F001F5854;
+			remoteInfo = FartLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A0519B524980F6F001F5854 /* FartLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FartLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0519B824980F6F001F5854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A0519BA24980F6F001F5854 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A0519BC24980F6F001F5854 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A0519BF24980F6F001F5854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A0519C224980F6F001F5854 /* FartLogger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FartLogger.xcdatamodel; sourceTree = "<group>"; };
+		1A0519C424980F72001F5854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A0519C724980F72001F5854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A0519C924980F72001F5854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0519CE24980F73001F5854 /* FartLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FartLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0519D224980F73001F5854 /* FartLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FartLoggerTests.swift; sourceTree = "<group>"; };
+		1A0519D424980F73001F5854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0519D924980F73001F5854 /* FartLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FartLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0519DD24980F73001F5854 /* FartLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FartLoggerUITests.swift; sourceTree = "<group>"; };
+		1A0519DF24980F73001F5854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0519B224980F6F001F5854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0519CB24980F73001F5854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0519D624980F73001F5854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0519AC24980F6F001F5854 = {
+			isa = PBXGroup;
+			children = (
+				1A0519B724980F6F001F5854 /* FartLogger */,
+				1A0519D124980F73001F5854 /* FartLoggerTests */,
+				1A0519DC24980F73001F5854 /* FartLoggerUITests */,
+				1A0519B624980F6F001F5854 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0519B624980F6F001F5854 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0519B524980F6F001F5854 /* FartLogger.app */,
+				1A0519CE24980F73001F5854 /* FartLoggerTests.xctest */,
+				1A0519D924980F73001F5854 /* FartLoggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A0519B724980F6F001F5854 /* FartLogger */ = {
+			isa = PBXGroup;
+			children = (
+				1A0519B824980F6F001F5854 /* AppDelegate.swift */,
+				1A0519BA24980F6F001F5854 /* SceneDelegate.swift */,
+				1A0519BC24980F6F001F5854 /* ViewController.swift */,
+				1A0519BE24980F6F001F5854 /* Main.storyboard */,
+				1A0519C424980F72001F5854 /* Assets.xcassets */,
+				1A0519C624980F72001F5854 /* LaunchScreen.storyboard */,
+				1A0519C924980F72001F5854 /* Info.plist */,
+				1A0519C124980F6F001F5854 /* FartLogger.xcdatamodeld */,
+			);
+			path = FartLogger;
+			sourceTree = "<group>";
+		};
+		1A0519D124980F73001F5854 /* FartLoggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A0519D224980F73001F5854 /* FartLoggerTests.swift */,
+				1A0519D424980F73001F5854 /* Info.plist */,
+			);
+			path = FartLoggerTests;
+			sourceTree = "<group>";
+		};
+		1A0519DC24980F73001F5854 /* FartLoggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A0519DD24980F73001F5854 /* FartLoggerUITests.swift */,
+				1A0519DF24980F73001F5854 /* Info.plist */,
+			);
+			path = FartLoggerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0519B424980F6F001F5854 /* FartLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0519E224980F73001F5854 /* Build configuration list for PBXNativeTarget "FartLogger" */;
+			buildPhases = (
+				1A0519B124980F6F001F5854 /* Sources */,
+				1A0519B224980F6F001F5854 /* Frameworks */,
+				1A0519B324980F6F001F5854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FartLogger;
+			productName = FartLogger;
+			productReference = 1A0519B524980F6F001F5854 /* FartLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A0519CD24980F73001F5854 /* FartLoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0519E524980F73001F5854 /* Build configuration list for PBXNativeTarget "FartLoggerTests" */;
+			buildPhases = (
+				1A0519CA24980F73001F5854 /* Sources */,
+				1A0519CB24980F73001F5854 /* Frameworks */,
+				1A0519CC24980F73001F5854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A0519D024980F73001F5854 /* PBXTargetDependency */,
+			);
+			name = FartLoggerTests;
+			productName = FartLoggerTests;
+			productReference = 1A0519CE24980F73001F5854 /* FartLoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A0519D824980F73001F5854 /* FartLoggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0519E824980F73001F5854 /* Build configuration list for PBXNativeTarget "FartLoggerUITests" */;
+			buildPhases = (
+				1A0519D524980F73001F5854 /* Sources */,
+				1A0519D624980F73001F5854 /* Frameworks */,
+				1A0519D724980F73001F5854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A0519DB24980F73001F5854 /* PBXTargetDependency */,
+			);
+			name = FartLoggerUITests;
+			productName = FartLoggerUITests;
+			productReference = 1A0519D924980F73001F5854 /* FartLoggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0519AD24980F6F001F5854 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "James Lane";
+				TargetAttributes = {
+					1A0519B424980F6F001F5854 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					1A0519CD24980F73001F5854 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 1A0519B424980F6F001F5854;
+					};
+					1A0519D824980F73001F5854 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 1A0519B424980F6F001F5854;
+					};
+				};
+			};
+			buildConfigurationList = 1A0519B024980F6F001F5854 /* Build configuration list for PBXProject "FartLogger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A0519AC24980F6F001F5854;
+			productRefGroup = 1A0519B624980F6F001F5854 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0519B424980F6F001F5854 /* FartLogger */,
+				1A0519CD24980F73001F5854 /* FartLoggerTests */,
+				1A0519D824980F73001F5854 /* FartLoggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0519B324980F6F001F5854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0519C824980F72001F5854 /* LaunchScreen.storyboard in Resources */,
+				1A0519C524980F72001F5854 /* Assets.xcassets in Resources */,
+				1A0519C024980F6F001F5854 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0519CC24980F73001F5854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0519D724980F73001F5854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0519B124980F6F001F5854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0519C324980F6F001F5854 /* FartLogger.xcdatamodeld in Sources */,
+				1A0519BD24980F6F001F5854 /* ViewController.swift in Sources */,
+				1A0519B924980F6F001F5854 /* AppDelegate.swift in Sources */,
+				1A0519BB24980F6F001F5854 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0519CA24980F73001F5854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0519D324980F73001F5854 /* FartLoggerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0519D524980F73001F5854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0519DE24980F73001F5854 /* FartLoggerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A0519D024980F73001F5854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A0519B424980F6F001F5854 /* FartLogger */;
+			targetProxy = 1A0519CF24980F73001F5854 /* PBXContainerItemProxy */;
+		};
+		1A0519DB24980F73001F5854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A0519B424980F6F001F5854 /* FartLogger */;
+			targetProxy = 1A0519DA24980F73001F5854 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A0519BE24980F6F001F5854 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0519BF24980F6F001F5854 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A0519C624980F72001F5854 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0519C724980F72001F5854 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A0519E024980F73001F5854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A0519E124980F73001F5854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A0519E324980F73001F5854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A433D9B4X2;
+				INFOPLIST_FILE = FartLogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameslane.FartLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A0519E424980F73001F5854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A433D9B4X2;
+				INFOPLIST_FILE = FartLogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameslane.FartLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A0519E624980F73001F5854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A433D9B4X2;
+				INFOPLIST_FILE = FartLoggerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameslane.FartLoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FartLogger.app/FartLogger";
+			};
+			name = Debug;
+		};
+		1A0519E724980F73001F5854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A433D9B4X2;
+				INFOPLIST_FILE = FartLoggerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameslane.FartLoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FartLogger.app/FartLogger";
+			};
+			name = Release;
+		};
+		1A0519E924980F73001F5854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A433D9B4X2;
+				INFOPLIST_FILE = FartLoggerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameslane.FartLoggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FartLogger;
+			};
+			name = Debug;
+		};
+		1A0519EA24980F73001F5854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A433D9B4X2;
+				INFOPLIST_FILE = FartLoggerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameslane.FartLoggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FartLogger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0519B024980F6F001F5854 /* Build configuration list for PBXProject "FartLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0519E024980F73001F5854 /* Debug */,
+				1A0519E124980F73001F5854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0519E224980F73001F5854 /* Build configuration list for PBXNativeTarget "FartLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0519E324980F73001F5854 /* Debug */,
+				1A0519E424980F73001F5854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0519E524980F73001F5854 /* Build configuration list for PBXNativeTarget "FartLoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0519E624980F73001F5854 /* Debug */,
+				1A0519E724980F73001F5854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0519E824980F73001F5854 /* Build configuration list for PBXNativeTarget "FartLoggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0519E924980F73001F5854 /* Debug */,
+				1A0519EA24980F73001F5854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A0519C124980F6F001F5854 /* FartLogger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A0519C224980F6F001F5854 /* FartLogger.xcdatamodel */,
+			);
+			currentVersion = 1A0519C224980F6F001F5854 /* FartLogger.xcdatamodel */;
+			path = FartLogger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1A0519AD24980F6F001F5854 /* Project object */;
+}
