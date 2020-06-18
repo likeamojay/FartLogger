@@ -20,5 +20,22 @@ extension UIView {
         self.layer.cornerRadius = 8.0
         
     }
-    
+        
+        // To add border lines to select views
+        
+        func addTopGrayBoundaryLine() {
+            
+            let bottomLine = CALayer()
+            bottomLine.frame = CGRect(x: 0.0, y: 0, width:self.bounds.width, height: 1.0)
+            bottomLine.backgroundColor = UIColor.lightGray.cgColor
+            self.layer.addSublayer(bottomLine)
+        }
+        
+        func addBottomGrayBoundaryLine() {
+              
+            let bottomLine = CALayer()
+            bottomLine.frame = CGRect(x: 0.0, y: self.bounds.height, width:self.bounds.width, height: 1.0)
+            bottomLine.backgroundColor = UIColor.lightGray.cgColor
+            self.layer.addSublayer(bottomLine)
+        }
 }
