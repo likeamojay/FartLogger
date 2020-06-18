@@ -74,7 +74,7 @@ class FartEntryDetailViewController : UIViewController {
         formatter.timeStyle = .medium
         
         
-        let message = "Hey Guess What? Jimbo's FartLogger detected I farted at " + formatter.string(from: entry.timestamp) + "\nWhen was your last rip?"
+        let message = "Hey Guess What? I farted at " + formatter.string(from: entry.timestamp) + "\n Message courtesy of Jimbo's FartLogger. When was your last rip?"
         
         let activityVC = UIActivityViewController(activityItems: [message], applicationActivities: nil)
         self.present(activityVC, animated: true)
