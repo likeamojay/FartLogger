@@ -6,4 +6,11 @@
 //  Copyright © 2020 James Lane. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+class FartLogTableCellView : UITableViewCell {
+    
+    @IBOutlet var dateAndTimeLabel: UILabel!
+    @IBOutlet var icon: UIImageView!
+}
