@@ -31,9 +31,9 @@ class FartSoundAnalysisResultsObserver : NSObject, SNResultsObserving {
         print("\(classification.identifier): \(percent) confidence.\n")
         
         
-        if classification.identifier == "wet" && confidence >= 99.0 {
+        if (classification.identifier == "wet" || classification.identifier == "dry") && confidence >= 95.0 {
             DispatchQueue.main.async {
-                self.dataManagerDelegate?.fartSoundDetected()
+                self.dataManagerDelegate?.fartSoundDetected(confidence: confidence)
             }
         }
     }

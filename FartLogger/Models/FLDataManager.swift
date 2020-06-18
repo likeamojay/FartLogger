@@ -10,7 +10,7 @@ import CoreData
 import UIKit
 
 protocol FLDataManagerDelegate {
-    func fartSoundDetected()
+    func fartSoundDetected(confidence : Double)
 }
 
 class FLDataManager {
@@ -143,9 +143,9 @@ extension FLDataManager : FLDataManagerDelegate {
     
     // Tell the data manager we detected a fart and should create a new data entry
     
-    func fartSoundDetected() {
+    func fartSoundDetected(confidence : Double) {
         
         let now = Date()
-        self.insertNewFartEntry(entry: FartEntry(timestamp: now))
+        self.insertNewFartEntry(entry: FartEntry(timestamp: now, confidence: confidence))
      }
 }

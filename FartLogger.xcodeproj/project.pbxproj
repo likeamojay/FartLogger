@@ -20,10 +20,10 @@
 		1A0519F0249817AD001F5854 /* FartLogTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0519EF249817AD001F5854 /* FartLogTableCellView.swift */; };
 		1A0519F324982625001F5854 /* FartEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0519F224982625001F5854 /* FartEntry.swift */; };
 		1A0519F724982921001F5854 /* FLDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0519F624982921001F5854 /* FLDataManager.swift */; };
+		1A55622A249BD49900AF1253 /* FartSoundClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1A556229249BD49900AF1253 /* FartSoundClassifier.mlmodel */; };
 		1A7A9AD0249A5EA70077CB4F /* RecordSessionViewController+SoundAnaylysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9ACF249A5EA70077CB4F /* RecordSessionViewController+SoundAnaylysis.swift */; };
 		1A7A9AE1249A844C0077CB4F /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 1A7A9AE0249A844C0077CB4F /* JGProgressHUD */; };
 		1A7A9AE3249ACCD90077CB4F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AE2249ACCD90077CB4F /* Utils.swift */; };
-		1A7A9AEB249AE0B80077CB4F /* FartSoundClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AEA249AE0B80077CB4F /* FartSoundClassifier.mlmodel */; };
 		1A7A9AED249AE3F60077CB4F /* FartEntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AEC249AE3F60077CB4F /* FartEntryDetailViewController.swift */; };
 		1A7A9AEF249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AEE249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift */; };
 		1A7A9AF1249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AF0249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift */; };
@@ -67,9 +67,9 @@
 		1A0519EF249817AD001F5854 /* FartLogTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FartLogTableCellView.swift; sourceTree = "<group>"; };
 		1A0519F224982625001F5854 /* FartEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FartEntry.swift; sourceTree = "<group>"; };
 		1A0519F624982921001F5854 /* FLDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLDataManager.swift; sourceTree = "<group>"; };
+		1A556229249BD49900AF1253 /* FartSoundClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FartSoundClassifier.mlmodel; sourceTree = "<group>"; };
 		1A7A9ACF249A5EA70077CB4F /* RecordSessionViewController+SoundAnaylysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordSessionViewController+SoundAnaylysis.swift"; sourceTree = "<group>"; };
 		1A7A9AE2249ACCD90077CB4F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		1A7A9AEA249AE0B80077CB4F /* FartSoundClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FartSoundClassifier.mlmodel; sourceTree = "<group>"; };
 		1A7A9AEC249AE3F60077CB4F /* FartEntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FartEntryDetailViewController.swift; sourceTree = "<group>"; };
 		1A7A9AEE249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordSessionViewController+AVAudioSession.swift"; sourceTree = "<group>"; };
 		1A7A9AF0249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FartSoundAnalysisResultsObserver.swift; sourceTree = "<group>"; };
@@ -125,7 +125,8 @@
 		1A0519B724980F6F001F5854 /* FartLogger */ = {
 			isa = PBXGroup;
 			children = (
-				1A7A9AEA249AE0B80077CB4F /* FartSoundClassifier.mlmodel */,
+				1A556229249BD49900AF1253 /* FartSoundClassifier.mlmodel */,
+				1A556228249BD37E00AF1253 /* Sound Processing */,
 				1A0519F124982616001F5854 /* Models */,
 				1A0519B824980F6F001F5854 /* AppDelegate.swift */,
 				1A0519BA24980F6F001F5854 /* SceneDelegate.swift */,
@@ -134,9 +135,6 @@
 				1A0519EB2498140F001F5854 /* FartLogViewController.swift */,
 				1A7A9AEC249AE3F60077CB4F /* FartEntryDetailViewController.swift */,
 				1AD58F322499C63A0094E1EF /* RecordSessionViewController.swift */,
-				1A7A9ACF249A5EA70077CB4F /* RecordSessionViewController+SoundAnaylysis.swift */,
-				1A7A9AF0249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift */,
-				1A7A9AEE249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift */,
 				1A0519ED2498155B001F5854 /* FartLoggerViewController+TableView.swift */,
 				1A0519EF249817AD001F5854 /* FartLogTableCellView.swift */,
 				1A7A9AD3249A72F60077CB4F /* Resources */,
@@ -171,6 +169,16 @@
 				1A0519F624982921001F5854 /* FLDataManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1A556228249BD37E00AF1253 /* Sound Processing */ = {
+			isa = PBXGroup;
+			children = (
+				1A7A9AF0249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift */,
+				1A7A9ACF249A5EA70077CB4F /* RecordSessionViewController+SoundAnaylysis.swift */,
+				1A7A9AEE249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift */,
+			);
+			path = "Sound Processing";
 			sourceTree = "<group>";
 		};
 		1A7A9AD3249A72F60077CB4F /* Resources */ = {
@@ -329,10 +337,10 @@
 				1A7A9AEF249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift in Sources */,
 				1A0519B924980F6F001F5854 /* AppDelegate.swift in Sources */,
 				1A7A9AE3249ACCD90077CB4F /* Utils.swift in Sources */,
+				1A55622A249BD49900AF1253 /* FartSoundClassifier.mlmodel in Sources */,
 				1A7A9AF1249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift in Sources */,
 				1A0519F724982921001F5854 /* FLDataManager.swift in Sources */,
 				1A0519BB24980F6F001F5854 /* SceneDelegate.swift in Sources */,
-				1A7A9AEB249AE0B80077CB4F /* FartSoundClassifier.mlmodel in Sources */,
 				1A0519F324982625001F5854 /* FartEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -251,7 +251,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CfJ-QL-flS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fart Log" image="ic_fart2" id="Kbd-vN-rSp"/>
+                    <tabBarItem key="tabBarItem" title="Fart Log" image="ic_fart2" id="Kbd-vN-rSp">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="tableView" destination="bli-mt-8Lr" id="qZS-6X-Uja"/>
                     </connections>
