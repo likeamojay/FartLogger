@@ -28,6 +28,7 @@
 		1A7A9AED249AE3F60077CB4F /* FartEntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AEC249AE3F60077CB4F /* FartEntryDetailViewController.swift */; };
 		1A7A9AEF249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AEE249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift */; };
 		1A7A9AF1249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AF0249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift */; };
+		1A8401A6249C79AB00BD7C1B /* FartEntryViewController+Telephony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8401A5249C79AB00BD7C1B /* FartEntryViewController+Telephony.swift */; };
 		1AD58F332499C63A0094E1EF /* RecordSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD58F322499C63A0094E1EF /* RecordSessionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		1A7A9AEC249AE3F60077CB4F /* FartEntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FartEntryDetailViewController.swift; sourceTree = "<group>"; };
 		1A7A9AEE249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordSessionViewController+AVAudioSession.swift"; sourceTree = "<group>"; };
 		1A7A9AF0249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FartSoundAnalysisResultsObserver.swift; sourceTree = "<group>"; };
+		1A8401A5249C79AB00BD7C1B /* FartEntryViewController+Telephony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FartEntryViewController+Telephony.swift"; sourceTree = "<group>"; };
 		1AD58F322499C63A0094E1EF /* RecordSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSessionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				1A523B3E249C13800087D990 /* FLSettingsViewController.swift */,
 				1A0519EB2498140F001F5854 /* FartLogViewController.swift */,
 				1A7A9AEC249AE3F60077CB4F /* FartEntryDetailViewController.swift */,
+				1A8401A5249C79AB00BD7C1B /* FartEntryViewController+Telephony.swift */,
 				1AD58F322499C63A0094E1EF /* RecordSessionViewController.swift */,
 				1A0519ED2498155B001F5854 /* FartLoggerViewController+TableView.swift */,
 				1A0519EF249817AD001F5854 /* FartLogTableCellView.swift */,
@@ -346,6 +349,7 @@
 				1A0519F724982921001F5854 /* FLDataManager.swift in Sources */,
 				1A0519BB24980F6F001F5854 /* SceneDelegate.swift in Sources */,
 				1A0519F324982625001F5854 /* FartEntry.swift in Sources */,
+				1A8401A6249C79AB00BD7C1B /* FartEntryViewController+Telephony.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = A433D9B4X2;
 				INFOPLIST_FILE = FartLogger/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -537,6 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = A433D9B4X2;
 				INFOPLIST_FILE = FartLogger/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

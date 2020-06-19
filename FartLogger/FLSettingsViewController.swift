@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Contacts
+import ContactsUI
 
 class FLSettingsViewController : UIViewController {
     
@@ -35,8 +37,22 @@ class FLSettingsViewController : UIViewController {
     
     @IBAction func didSwitchOnOff(_ sender: UISwitch) {
         
+        CNContactStore().requestAccess(for: .contacts) { (access, error) in
+          print("Access: \(access)")
+        }
+        
+        let contactViewController = CNContactViewController()
+        contactViewController.hidesBottomBarWhenPushed = true
+        contactViewController.allowsEditing = false
+        contactViewController.allowsActions = false
+        
+        // 3
+        navigationController?.pushViewController(contactViewController, animated: true)
+        
         
     }
+    
+  
     
     
     
