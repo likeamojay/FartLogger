@@ -91,87 +91,90 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Automatic Fart Messages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sU-b7-3x4">
-                                <rect key="frame" x="16" y="67" width="224.5" height="29"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                <rect key="frame" x="16" y="77" width="316" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zh1-5Z-ofQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                 <color key="textColor" red="0.20392156859999999" green="0.40608779049999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Version 1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVy-KG-KNg">
-                                <rect key="frame" x="16" y="358" width="91.5" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="Version 1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVy-KG-KNg">
+                                <rect key="frame" x="16" y="345" width="91.5" height="23"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
                                 <color key="textColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" misplaced="YES" text=" ©2020 James Lane" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWJ-4F-pzA">
-                                <rect key="frame" x="16" y="564" width="254" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text=" ©2020 James Lane" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWJ-4F-pzA">
+                                <rect key="frame" x="10" y="532" width="169" height="71.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
                                 <color key="textColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Made with Love + Farts in the 719" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPJ-4v-wrD">
-                                <rect key="frame" x="16" y="389" width="222" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="Made with Love + Farts in the 719" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPJ-4v-wrD">
+                                <rect key="frame" x="16" y="384" width="215" height="16.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
                                 <color key="textColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3m-UL-egX">
-                                <rect key="frame" x="16" y="294" width="93.5" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3m-UL-egX">
+                                <rect key="frame" x="16" y="282" width="93.5" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="8bk-vO-Lve"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
                                 <color key="textColor" red="0.20392156859999999" green="0.40608779049999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-a8-kmH">
-                                <rect key="frame" x="16" y="114" width="224.5" height="65.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-a8-kmH">
+                                <rect key="frame" x="16" y="125" width="227" height="75"/>
                                 <string key="text">Automatically send SMS texts to your friends when you fart! You can always manually send an entry by tapping it in the Log Section.</string>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
                                 <color key="textColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCN-bL-W20">
-                                <rect key="frame" x="287.5" y="106" width="50.5" height="31"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coslogo" translatesAutoresizingMaskIntoConstraints="NO" id="k3z-yY-pue">
+                                <rect key="frame" x="16" y="412" width="67" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="5bs-3a-tZp"/>
+                                    <constraint firstAttribute="height" constant="28" id="sDV-Tt-fsb"/>
+                                </constraints>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="752" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCN-bL-W20">
+                                <rect key="frame" x="16" y="228" width="51" height="31"/>
                                 <connections>
                                     <action selector="didSwitchOnOff:" destination="jLc-s8-Rvp" eventType="valueChanged" id="7g2-Z3-ne0"/>
                                 </connections>
                             </switch>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coslogo" translatesAutoresizingMaskIntoConstraints="NO" id="k3z-yY-pue">
-                                <rect key="frame" x="246" y="387" width="104" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="104" id="QgB-pI-CHO"/>
-                                    <constraint firstAttribute="height" constant="51" id="eSN-oz-GFI"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" secondItem="jCN-bL-W20" secondAttribute="trailing" constant="39" id="0n8-55-FUw"/>
+                            <constraint firstItem="oWJ-4F-pzA" firstAttribute="top" secondItem="k3z-yY-pue" secondAttribute="bottom" constant="96" id="1ED-WB-Ryc"/>
                             <constraint firstItem="h3m-UL-egX" firstAttribute="leading" secondItem="TfZ-a8-kmH" secondAttribute="leading" id="1LE-ko-j5m"/>
-                            <constraint firstItem="PVy-KG-KNg" firstAttribute="top" secondItem="h3m-UL-egX" secondAttribute="bottom" constant="35" id="4xQ-Y0-BLv"/>
-                            <constraint firstItem="PVy-KG-KNg" firstAttribute="leading" secondItem="h3m-UL-egX" secondAttribute="leading" id="7cr-Ue-STh"/>
-                            <constraint firstItem="pgE-P8-xox" firstAttribute="bottom" secondItem="k3z-yY-pue" secondAttribute="bottom" constant="180" id="89m-ZJ-BeI"/>
-                            <constraint firstItem="jCN-bL-W20" firstAttribute="leading" secondItem="1sU-b7-3x4" secondAttribute="trailing" constant="47" id="Atp-wH-u0K"/>
-                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h3m-UL-egX" secondAttribute="trailing" constant="255" id="Chj-Ea-bZS"/>
-                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1sU-b7-3x4" secondAttribute="trailing" constant="81" id="EQg-g9-Ntj"/>
-                            <constraint firstItem="h3m-UL-egX" firstAttribute="top" secondItem="TfZ-a8-kmH" secondAttribute="bottom" constant="114.5" id="EUd-yM-unb"/>
-                            <constraint firstItem="k3z-yY-pue" firstAttribute="top" secondItem="jCN-bL-W20" secondAttribute="bottom" constant="250" id="H1L-Z9-j9d"/>
-                            <constraint firstItem="oPJ-4v-wrD" firstAttribute="leading" secondItem="pgE-P8-xox" secondAttribute="leading" constant="16" id="HGm-6y-sGB"/>
+                            <constraint firstItem="1sU-b7-3x4" firstAttribute="leading" secondItem="TfZ-a8-kmH" secondAttribute="leading" id="2UW-gb-PiQ"/>
+                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PVy-KG-KNg" secondAttribute="trailing" constant="267.5" id="3e1-0J-E4y"/>
+                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h3m-UL-egX" secondAttribute="trailing" constant="43" id="Chj-Ea-bZS"/>
+                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="k3z-yY-pue" secondAttribute="trailing" constant="292" id="DBz-KD-sLj"/>
+                            <constraint firstItem="jCN-bL-W20" firstAttribute="top" secondItem="TfZ-a8-kmH" secondAttribute="bottom" constant="28" id="FLd-ZK-HAB"/>
+                            <constraint firstItem="h3m-UL-egX" firstAttribute="top" secondItem="jCN-bL-W20" secondAttribute="bottom" constant="19" id="Gav-sm-iyC"/>
+                            <constraint firstItem="PVy-KG-KNg" firstAttribute="leading" secondItem="oPJ-4v-wrD" secondAttribute="leading" id="I89-Hj-6nM"/>
+                            <constraint firstItem="jCN-bL-W20" firstAttribute="leading" secondItem="TfZ-a8-kmH" secondAttribute="leading" id="KVv-2z-kJI"/>
                             <constraint firstItem="TfZ-a8-kmH" firstAttribute="leading" secondItem="pgE-P8-xox" secondAttribute="leading" constant="16" id="Loj-Zg-ixJ"/>
                             <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TfZ-a8-kmH" secondAttribute="trailing" constant="81" id="N23-by-rXw"/>
-                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" secondItem="k3z-yY-pue" secondAttribute="trailing" constant="25" id="Sct-a1-cKx"/>
+                            <constraint firstItem="TfZ-a8-kmH" firstAttribute="top" secondItem="1sU-b7-3x4" secondAttribute="bottom" constant="8" id="PII-Vg-5tZ"/>
+                            <constraint firstItem="h3m-UL-egX" firstAttribute="leading" secondItem="PVy-KG-KNg" secondAttribute="leading" id="RiR-cK-dS2"/>
                             <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oWJ-4F-pzA" secondAttribute="trailing" constant="105" id="U38-Lf-yqj"/>
-                            <constraint firstItem="oPJ-4v-wrD" firstAttribute="top" secondItem="PVy-KG-KNg" secondAttribute="bottom" constant="8" id="UHd-7a-ufj"/>
-                            <constraint firstItem="pgE-P8-xox" firstAttribute="bottom" secondItem="h3m-UL-egX" secondAttribute="bottom" constant="295" id="Zyu-gS-Rrt"/>
-                            <constraint firstItem="pgE-P8-xox" firstAttribute="bottom" secondItem="oWJ-4F-pzA" secondAttribute="bottom" constant="25" id="a7S-XG-liv"/>
-                            <constraint firstItem="oWJ-4F-pzA" firstAttribute="leading" secondItem="PVy-KG-KNg" secondAttribute="leading" id="aG8-Az-Dpm"/>
-                            <constraint firstItem="oWJ-4F-pzA" firstAttribute="top" secondItem="oPJ-4v-wrD" secondAttribute="bottom" constant="126" id="e8R-I4-rDd"/>
-                            <constraint firstItem="k3z-yY-pue" firstAttribute="leading" secondItem="oPJ-4v-wrD" secondAttribute="trailing" constant="8" id="emo-Zi-He6"/>
-                            <constraint firstItem="1sU-b7-3x4" firstAttribute="leading" secondItem="pgE-P8-xox" secondAttribute="leading" constant="16" id="hiJ-1l-9Ol"/>
-                            <constraint firstItem="pgE-P8-xox" firstAttribute="bottom" secondItem="jCN-bL-W20" secondAttribute="bottom" constant="481" id="lCq-0R-ZGY"/>
-                            <constraint firstItem="TfZ-a8-kmH" firstAttribute="top" secondItem="1sU-b7-3x4" secondAttribute="bottom" constant="18" id="ovN-mZ-8uN"/>
-                            <constraint firstItem="jCN-bL-W20" firstAttribute="leading" secondItem="TfZ-a8-kmH" secondAttribute="trailing" constant="47" id="sqy-pG-5Pw"/>
-                            <constraint firstItem="jCN-bL-W20" firstAttribute="top" secondItem="pgE-P8-xox" secondAttribute="top" constant="62" id="uD1-eR-Q8V"/>
-                            <constraint firstItem="1sU-b7-3x4" firstAttribute="top" secondItem="pgE-P8-xox" secondAttribute="top" constant="23" id="zJm-5v-ZEa"/>
-                            <constraint firstItem="pgE-P8-xox" firstAttribute="bottom" secondItem="TfZ-a8-kmH" secondAttribute="bottom" constant="438.5" id="zJt-LX-571"/>
-                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PVy-KG-KNg" secondAttribute="trailing" constant="267.5" id="zQE-7H-eDr"/>
+                            <constraint firstItem="k3z-yY-pue" firstAttribute="leading" secondItem="oPJ-4v-wrD" secondAttribute="leading" id="UlU-sx-9xS"/>
+                            <constraint firstItem="k3z-yY-pue" firstAttribute="top" secondItem="oPJ-4v-wrD" secondAttribute="bottom" constant="11.5" id="Up6-kv-xOa"/>
+                            <constraint firstItem="oPJ-4v-wrD" firstAttribute="top" secondItem="PVy-KG-KNg" secondAttribute="bottom" constant="16" id="VT3-md-bk5"/>
+                            <constraint firstItem="PVy-KG-KNg" firstAttribute="top" secondItem="h3m-UL-egX" secondAttribute="bottom" constant="8" id="W5D-84-e2S"/>
+                            <constraint firstItem="pgE-P8-xox" firstAttribute="bottom" secondItem="oWJ-4F-pzA" secondAttribute="bottom" constant="14.5" id="a7S-XG-liv"/>
+                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="jCN-bL-W20" secondAttribute="trailing" constant="310" id="et8-SE-AvI"/>
+                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oPJ-4v-wrD" secondAttribute="trailing" constant="137" id="mGY-rg-XMu"/>
+                            <constraint firstItem="k3z-yY-pue" firstAttribute="leading" secondItem="oWJ-4F-pzA" secondAttribute="leading" constant="6" id="rzj-oA-8CZ"/>
+                            <constraint firstItem="pgE-P8-xox" firstAttribute="trailing" secondItem="1sU-b7-3x4" secondAttribute="trailing" constant="43" id="vjA-XN-Qto"/>
+                            <constraint firstItem="pgE-P8-xox" firstAttribute="bottom" secondItem="TfZ-a8-kmH" secondAttribute="bottom" constant="418" id="zJt-LX-571"/>
+                            <constraint firstItem="1sU-b7-3x4" firstAttribute="top" secondItem="pgE-P8-xox" secondAttribute="top" constant="33" id="zwe-wb-WPj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pgE-P8-xox"/>
                     </view>
@@ -179,6 +182,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="aboutLabel" destination="h3m-UL-egX" id="fat-hK-Bw4"/>
                         <outlet property="automaticFartMessagesLabel" destination="1sU-b7-3x4" id="EXf-Yx-p6X"/>
                         <outlet property="automaticMessagesLabel" destination="TfZ-a8-kmH" id="i7i-Lm-34F"/>
                         <outlet property="automaticMessagesOnOff" destination="jCN-bL-W20" id="3Sk-mj-0AN"/>
@@ -392,14 +396,14 @@
     </scenes>
     <resources>
         <image name="backPocket" width="91.5" height="256"/>
-        <image name="coslogo" width="1000" height="392"/>
+        <image name="coslogo" width="500" height="196"/>
         <image name="ic_arrow" width="128" height="128"/>
         <image name="ic_fart" width="150" height="256"/>
         <image name="ic_fart2" width="35" height="35"/>
         <image name="ic_fart3" width="256" height="256"/>
         <image name="ic_playButton" width="256" height="256"/>
         <image name="ic_record" width="35" height="35"/>
-        <image name="ic_settings" width="15" height="15"/>
+        <image name="ic_settings" width="25" height="25"/>
         <image name="startRecordButton" width="256" height="256"/>
     </resources>
 </document>

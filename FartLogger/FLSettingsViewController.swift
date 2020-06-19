@@ -11,6 +11,7 @@ import UIKit
 class FLSettingsViewController : UIViewController {
     
   
+    @IBOutlet var aboutLabel: UILabel!
     @IBOutlet var automaticMessagesOnOff: UISwitch!
     @IBOutlet var automaticMessagesLabel: UILabel!
     @IBOutlet var automaticFartMessagesLabel: UILabel!
@@ -19,6 +20,8 @@ class FLSettingsViewController : UIViewController {
         super.viewDidLoad()
         
         automaticMessagesOnOff.isOn = false
+        automaticFartMessagesLabel.addBottomGrayBoundaryLine()
+        aboutLabel.addBottomGrayBoundaryLine()
     }
     
     override func viewWillAppear(_ animated: Bool) {
