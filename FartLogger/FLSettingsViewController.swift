@@ -41,10 +41,9 @@ class FLSettingsViewController : UIViewController {
           print("Access: \(access)")
         }
         
-        let contactViewController = CNContactViewController()
+        let contactViewController = CNContactPickerViewController()
         contactViewController.hidesBottomBarWhenPushed = true
-        contactViewController.allowsEditing = false
-        contactViewController.allowsActions = false
+        contactViewController.delegate = self
         
         // 3
         navigationController?.pushViewController(contactViewController, animated: true)
@@ -52,7 +51,11 @@ class FLSettingsViewController : UIViewController {
         
     }
     
-  
+}
+
+extension FLSettingsViewController : CNContactPickerDelegate {
+    
+    
     
     
     

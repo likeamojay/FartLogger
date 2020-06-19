@@ -75,6 +75,7 @@
                             <constraint firstItem="2FL-5w-T7P" firstAttribute="bottom" secondItem="emA-za-1Rn" secondAttribute="bottom" constant="28" id="1tA-JU-Ec6"/>
                             <constraint firstItem="SqT-Ya-izh" firstAttribute="top" secondItem="e1W-99-4VG" secondAttribute="bottom" constant="44" id="1xQ-T7-c29"/>
                             <constraint firstItem="2FL-5w-T7P" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SqT-Ya-izh" secondAttribute="trailing" constant="5" id="25E-c6-Pyn"/>
+                            <constraint firstItem="qJO-P0-qQ8" firstAttribute="top" secondItem="2FL-5w-T7P" secondAttribute="top" constant="44" id="2c0-c0-Ugv"/>
                             <constraint firstItem="SqT-Ya-izh" firstAttribute="top" secondItem="gZh-pb-yuK" secondAttribute="bottom" constant="16" id="3VT-Ji-iNW"/>
                             <constraint firstItem="Gko-mD-u3T" firstAttribute="leading" secondItem="qJO-P0-qQ8" secondAttribute="trailing" constant="-2" id="4Ps-89-A9j"/>
                             <constraint firstItem="Pzu-IT-ikQ" firstAttribute="leading" secondItem="Gko-mD-u3T" secondAttribute="trailing" constant="13" id="6hc-0H-quv"/>
@@ -82,9 +83,11 @@
                             <constraint firstItem="e1W-99-4VG" firstAttribute="leading" secondItem="Pzu-IT-ikQ" secondAttribute="trailing" constant="-1" id="Jfl-ER-hQj"/>
                             <constraint firstItem="SqT-Ya-izh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2FL-5w-T7P" secondAttribute="leading" constant="5" id="LP4-X5-sbH"/>
                             <constraint firstItem="2FL-5w-T7P" firstAttribute="trailing" secondItem="gZh-pb-yuK" secondAttribute="trailing" constant="16" id="MH8-Ah-81j"/>
+                            <constraint firstItem="Pzu-IT-ikQ" firstAttribute="top" secondItem="2FL-5w-T7P" secondAttribute="top" constant="49" id="Unb-0K-UR6"/>
                             <constraint firstItem="emA-za-1Rn" firstAttribute="top" secondItem="SqT-Ya-izh" secondAttribute="bottom" constant="52" id="W5m-OY-yHC"/>
                             <constraint firstItem="emA-za-1Rn" firstAttribute="centerX" secondItem="QJ4-3S-UKd" secondAttribute="centerX" id="Y8y-R6-ZGY"/>
                             <constraint firstItem="SqT-Ya-izh" firstAttribute="top" secondItem="qJO-P0-qQ8" secondAttribute="bottom" constant="21" id="aIl-Jl-hdX"/>
+                            <constraint firstItem="gZh-pb-yuK" firstAttribute="top" secondItem="2FL-5w-T7P" secondAttribute="top" constant="44" id="agj-TB-HeF"/>
                             <constraint firstItem="emA-za-1Rn" firstAttribute="leading" secondItem="2FL-5w-T7P" secondAttribute="leading" constant="110" id="cLA-d7-ryf"/>
                             <constraint firstItem="gZh-pb-yuK" firstAttribute="leading" secondItem="e1W-99-4VG" secondAttribute="trailing" constant="-13" id="dD2-CI-XML"/>
                             <constraint firstItem="SqT-Ya-izh" firstAttribute="top" secondItem="Pzu-IT-ikQ" secondAttribute="bottom" constant="16" id="hLb-rz-IXo"/>
@@ -114,7 +117,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Automatic Fart Messages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sU-b7-3x4">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Automatic Fart Messages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sU-b7-3x4">
                                 <rect key="frame" x="16" y="77" width="316" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zh1-5Z-ofQ"/>
@@ -150,7 +153,7 @@
                                 <color key="textColor" red="0.20392156859999999" green="0.40608779049999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-a8-kmH">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-a8-kmH">
                                 <rect key="frame" x="16" y="125" width="272.5" height="75"/>
                                 <string key="text">Automatically send SMS texts to your friends when you fart! You can always manually send an entry by tapping it in the Log Section.</string>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
@@ -164,7 +167,7 @@
                                     <constraint firstAttribute="height" constant="28" id="sDV-Tt-fsb"/>
                                 </constraints>
                             </imageView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCN-bL-W20">
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCN-bL-W20">
                                 <rect key="frame" x="16" y="228" width="51" height="31"/>
                                 <connections>
                                     <action selector="didSwitchOnOff:" destination="jLc-s8-Rvp" eventType="valueChanged" id="7g2-Z3-ne0"/>
