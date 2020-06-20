@@ -12,6 +12,6 @@ class Constants {
     
     static let kAutoTextsEnabled = "autoTextsEnabled"
     static let kTwilioAccountID = "AC0fd45b5a029d5931fa7ced3f45456bda"
-    static let kTwilioAccountToken = "f0cb467d1071a6f2e4b4dc6b441509b6"
+    static let kTwilioAccountToken = "06eb6a80df3ccf510dd34182b5463418"
     static let kNameToGoBy = "nameToGoBy"
 }
