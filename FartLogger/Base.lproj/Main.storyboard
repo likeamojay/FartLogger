@@ -70,7 +70,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93725490196078431" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2FL-5w-T7P" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="emA-za-1Rn" secondAttribute="bottom" constant="28" id="1tA-JU-Ec6"/>
                             <constraint firstItem="SqT-Ya-izh" firstAttribute="top" secondItem="e1W-99-4VG" secondAttribute="bottom" constant="44" id="1xQ-T7-c29"/>
@@ -217,7 +217,7 @@
                                 <state key="normal" image="info.circle" catalog="system"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93725490196078431" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="U6F-Us-fir" firstAttribute="leading" secondItem="cmD-5L-DNE" secondAttribute="trailing" constant="9" id="0xr-07-o48"/>
                             <constraint firstItem="h3m-UL-egX" firstAttribute="leading" secondItem="TfZ-a8-kmH" secondAttribute="leading" id="1LE-ko-j5m"/>
@@ -334,7 +334,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93725490196078431" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="D4J-H4-IpL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IAT-0P-mQ0" secondAttribute="trailing" constant="5" id="0VO-D7-VUH"/>
                             <constraint firstItem="t9h-e1-Kmn" firstAttribute="top" secondItem="uWr-OW-KY1" secondAttribute="bottom" constant="47" id="8dv-lu-rs3"/>
@@ -406,8 +406,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mm/dd/yyyy @ HH:MM AM/PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b84-eY-tdv">
-                                                    <rect key="frame" x="20" y="30.5" width="272" height="22"/>
-                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                    <rect key="frame" x="9" y="29" width="314" height="25"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
                                                     <color key="textColor" red="0.20392156859999999" green="0.40608779049999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -422,12 +422,13 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="SPp-6A-XWl" secondAttribute="trailing" constant="13" id="629-px-MBC"/>
-                                                <constraint firstItem="b84-eY-tdv" firstAttribute="leading" secondItem="axd-L7-Tbo" secondAttribute="leading" constant="20" id="85T-Cb-Gid"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b84-eY-tdv" secondAttribute="trailing" constant="20" symbolic="YES" id="HrP-2M-JrJ"/>
+                                                <constraint firstItem="b84-eY-tdv" firstAttribute="leading" secondItem="axd-L7-Tbo" secondAttribute="leading" constant="9" id="85T-Cb-Gid"/>
+                                                <constraint firstItem="SPp-6A-XWl" firstAttribute="leading" secondItem="b84-eY-tdv" secondAttribute="trailing" constant="-3" id="i1x-ig-dAF"/>
                                                 <constraint firstItem="SPp-6A-XWl" firstAttribute="centerY" secondItem="axd-L7-Tbo" secondAttribute="centerY" id="iRA-OJ-1rg"/>
                                                 <constraint firstItem="b84-eY-tdv" firstAttribute="centerY" secondItem="axd-L7-Tbo" secondAttribute="centerY" id="oCT-Yj-YGe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93333333333333335" green="0.93725490196078431" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="dateAndTimeLabel" destination="b84-eY-tdv" id="ZYS-82-EHV"/>
                                             <outlet property="icon" destination="SPp-6A-XWl" id="7p8-2f-ndo"/>
