@@ -50,6 +50,9 @@ class FLSettingsViewController : UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        if  UserDefaults.standard.value(forKey: Constants.kNameToGoBy) != nil {
+                   nameTextField.text = UserDefaults.standard.value(forKey: Constants.kNameToGoBy) as? String
+               }
         
         if FLDataManager.shared.currentContactNumbers.count > 0 && !nameTextField.text!.isEmpty{
             
@@ -58,13 +61,6 @@ class FLSettingsViewController : UIViewController, UITextFieldDelegate {
             automaticMessagesOnOff.isOn = false
         }
         
-        if  UserDefaults.standard.value(forKey: Constants.kNameToGoBy) != nil {
-            nameTextField.text = UserDefaults.standard.value(forKey: Constants.kNameToGoBy) as? String
-        }
-        
-        if !automaticMessagesOnOff.isOn {
-                  FLDataManager.shared.removeAllContactNumbers()
-              }
         
         nameToGiveToRecipientsLabel.text = "Name to give to " + String(FLDataManager.shared.currentContactNumbers.count) + " recipients"
     }
@@ -91,11 +87,14 @@ class FLSettingsViewController : UIViewController, UITextFieldDelegate {
         contactStore.requestAccess(for: .contacts) { (granted, error: Error?) in
             
             if granted {
+                
+                DispatchQueue.main.async {
                 let contactPicker = CNContactPickerViewController()
                       contactPicker.delegate = self
                       contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey]
                       // 2
                 self.present(contactPicker, animated: true, completion: nil)
+                }
             }
         }
         
@@ -134,54 +133,11 @@ extension FLSettingsViewController : CNContactPickerDelegate {
         
         let stripped  = (contact.phoneNumbers.first!.value).stringValue.replacingOccurrences(of: "+", with: "").replacingOccurrences(of: "-", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "(", with: "").replacingOccurrences(of: " ", with: "")
         FLDataManager.shared.insertNewContactNumber(entry: ContactNumber(name: contact.givenName + " " + contact.familyName, phoneNumber: stripped))
+        
+         nameToGiveToRecipientsLabel.text = "Name to give to " + String(FLDataManager.shared.currentContactNumbers.count) + " recipients"
     }
     
 }
 
 
-extension FLSettingsViewController : SendFartToYourFriendsDelegate {
-    
-    func sendTo(entry: FartEntry) {
-        
-         let accountSID = Constants.kTwilioAccountID
-         let authToken = Constants.kTwilioAccountToken
-        
 
-       let formatter = DateFormatter()
-       formatter.dateStyle = .short
-       formatter.timeStyle = .medium
-       
-
-         let message = "Hey Guess What? This is " + NameToSend + ". I farted at " + formatter.string(from: entry.timestamp) + "\nMessage courtesy of Jimbo's FartLogger."
-
-        let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-        
-        let numbers : [String] = FLDataManager.shared.currentContactNumbers.map { (c : ContactNumber) -> String in
-            return c.phoneNumber
-        }
-        
-        
-        let operationQueue = OperationQueue()
-        operationQueue.maxConcurrentOperationCount = 1
-        operationQueue.qualityOfService = .background
-       
-        for number in numbers {
-        operationQueue.addOperation {
-        
-        let parameters = ["From": "7192591279", "To": number , "Body": message]
-                      
-                  Alamofire.AF.request(url, method: .post, parameters: parameters).authenticate(username: accountSID, password: authToken).responseJSON {
-                      response in
-                      debugPrint(response)
-                  }
-            
-
-            RunLoop.main.run()
-            operationQueue.waitUntilAllOperationsAreFinished()
-            
-        }
-        
-        }
-        
-    }
-}

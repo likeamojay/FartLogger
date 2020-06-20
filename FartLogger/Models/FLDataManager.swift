@@ -77,11 +77,6 @@ class FLDataManager {
 
         self.saveData()
         
-        
-        // Send to friends if enabled
-        if UserDefaults.standard.bool(forKey: Constants.kAutoTextsEnabled) {
-              sendFartsToFriendsDelegate?.sendTo(entry: entry)
-        }
     }
     
     func insertNewContactNumber(entry : ContactNumber) {
