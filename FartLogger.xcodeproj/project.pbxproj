@@ -26,10 +26,11 @@
 		1A7A9AE1249A844C0077CB4F /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 1A7A9AE0249A844C0077CB4F /* JGProgressHUD */; };
 		1A7A9AE3249ACCD90077CB4F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AE2249ACCD90077CB4F /* Utils.swift */; };
 		1A7A9AED249AE3F60077CB4F /* FartEntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AEC249AE3F60077CB4F /* FartEntryDetailViewController.swift */; };
-		1A7A9AEF249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AEE249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift */; };
 		1A7A9AF1249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7A9AF0249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift */; };
-		1A8401A6249C79AB00BD7C1B /* FartEntryViewController+Telephony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8401A5249C79AB00BD7C1B /* FartEntryViewController+Telephony.swift */; };
 		1AD58F332499C63A0094E1EF /* RecordSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD58F322499C63A0094E1EF /* RecordSessionViewController.swift */; };
+		1AE1DFCA249DB36100689B79 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE1DFC9249DB36100689B79 /* Constants.swift */; };
+		1AE1DFCC249DB3FF00689B79 /* ContactNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE1DFCB249DB3FF00689B79 /* ContactNumber.swift */; };
+		1AE1DFCF249E473200689B79 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1AE1DFCE249E473200689B79 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,10 +75,10 @@
 		1A7A9ACF249A5EA70077CB4F /* RecordSessionViewController+SoundAnaylysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordSessionViewController+SoundAnaylysis.swift"; sourceTree = "<group>"; };
 		1A7A9AE2249ACCD90077CB4F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1A7A9AEC249AE3F60077CB4F /* FartEntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FartEntryDetailViewController.swift; sourceTree = "<group>"; };
-		1A7A9AEE249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordSessionViewController+AVAudioSession.swift"; sourceTree = "<group>"; };
 		1A7A9AF0249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FartSoundAnalysisResultsObserver.swift; sourceTree = "<group>"; };
-		1A8401A5249C79AB00BD7C1B /* FartEntryViewController+Telephony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FartEntryViewController+Telephony.swift"; sourceTree = "<group>"; };
 		1AD58F322499C63A0094E1EF /* RecordSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSessionViewController.swift; sourceTree = "<group>"; };
+		1AE1DFC9249DB36100689B79 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1AE1DFCB249DB3FF00689B79 /* ContactNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A7A9AE1249A844C0077CB4F /* JGProgressHUD in Frameworks */,
+				1AE1DFCF249E473200689B79 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,12 +141,12 @@
 				1A523B3E249C13800087D990 /* FLSettingsViewController.swift */,
 				1A0519EB2498140F001F5854 /* FartLogViewController.swift */,
 				1A7A9AEC249AE3F60077CB4F /* FartEntryDetailViewController.swift */,
-				1A8401A5249C79AB00BD7C1B /* FartEntryViewController+Telephony.swift */,
 				1AD58F322499C63A0094E1EF /* RecordSessionViewController.swift */,
 				1A0519ED2498155B001F5854 /* FartLoggerViewController+TableView.swift */,
 				1A0519EF249817AD001F5854 /* FartLogTableCellView.swift */,
 				1A7A9AD3249A72F60077CB4F /* Resources */,
 				1A7A9AE2249ACCD90077CB4F /* Utils.swift */,
+				1AE1DFC9249DB36100689B79 /* Constants.swift */,
 			);
 			path = FartLogger;
 			sourceTree = "<group>";
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				1A0519C124980F6F001F5854 /* FartLogger.xcdatamodeld */,
+				1AE1DFCB249DB3FF00689B79 /* ContactNumber.swift */,
 				1A0519F224982625001F5854 /* FartEntry.swift */,
 				1A0519F624982921001F5854 /* FLDataManager.swift */,
 			);
@@ -182,7 +185,6 @@
 			children = (
 				1A7A9AF0249BA79B0077CB4F /* FartSoundAnalysisResultsObserver.swift */,
 				1A7A9ACF249A5EA70077CB4F /* RecordSessionViewController+SoundAnaylysis.swift */,
-				1A7A9AEE249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift */,
 			);
 			path = "Sound Processing";
 			sourceTree = "<group>";
@@ -214,6 +216,7 @@
 			name = FartLogger;
 			packageProductDependencies = (
 				1A7A9AE0249A844C0077CB4F /* JGProgressHUD */,
+				1AE1DFCE249E473200689B79 /* Alamofire */,
 			);
 			productName = FartLogger;
 			productReference = 1A0519B524980F6F001F5854 /* FartLogger.app */;
@@ -289,6 +292,7 @@
 			mainGroup = 1A0519AC24980F6F001F5854;
 			packageReferences = (
 				1A7A9ADF249A844C0077CB4F /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				1AE1DFCD249E473200689B79 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 1A0519B624980F6F001F5854 /* Products */;
 			projectDirPath = "";
@@ -336,11 +340,11 @@
 				1A0519EC2498140F001F5854 /* FartLogViewController.swift in Sources */,
 				1A0519C324980F6F001F5854 /* FartLogger.xcdatamodeld in Sources */,
 				1AD58F332499C63A0094E1EF /* RecordSessionViewController.swift in Sources */,
+				1AE1DFCC249DB3FF00689B79 /* ContactNumber.swift in Sources */,
 				1A0519EE2498155B001F5854 /* FartLoggerViewController+TableView.swift in Sources */,
 				1A0519F0249817AD001F5854 /* FartLogTableCellView.swift in Sources */,
 				1A7A9AED249AE3F60077CB4F /* FartEntryDetailViewController.swift in Sources */,
 				1A7A9AD0249A5EA70077CB4F /* RecordSessionViewController+SoundAnaylysis.swift in Sources */,
-				1A7A9AEF249BA7860077CB4F /* RecordSessionViewController+AVAudioSession.swift in Sources */,
 				1A0519B924980F6F001F5854 /* AppDelegate.swift in Sources */,
 				1A7A9AE3249ACCD90077CB4F /* Utils.swift in Sources */,
 				1A523B3D249C11A40087D990 /* FartSoundClassifier.mlmodel in Sources */,
@@ -349,7 +353,7 @@
 				1A0519F724982921001F5854 /* FLDataManager.swift in Sources */,
 				1A0519BB24980F6F001F5854 /* SceneDelegate.swift in Sources */,
 				1A0519F324982625001F5854 /* FartEntry.swift in Sources */,
-				1A8401A6249C79AB00BD7C1B /* FartEntryViewController+Telephony.swift in Sources */,
+				1AE1DFCA249DB36100689B79 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,6 +694,14 @@
 				minimumVersion = 2.1.0;
 			};
 		};
+		1AE1DFCD249E473200689B79 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -697,6 +709,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1A7A9ADF249A844C0077CB4F /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
 			productName = JGProgressHUD;
+		};
+		1AE1DFCE249E473200689B79 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AE1DFCD249E473200689B79 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 

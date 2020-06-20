@@ -8,6 +8,7 @@
 
 import CoreData
 import UIKit
+import Alamofire
 
 protocol FLDataManagerDelegate {
     func fartSoundDetected(confidence : Double)
@@ -17,6 +18,8 @@ class FLDataManager {
  
     static let shared : FLDataManager = FLDataManager()
     
+    var sendFartsToFriendsDelegate : SendFartToYourFriendsDelegate?
+
     func saveData() {
         
         guard let appDelegate =
@@ -45,11 +48,82 @@ class FLDataManager {
 
         let managedContext =
           appDelegate.persistentContainer.viewContext
+             
+           var entries : [CDFartEntry] = []
+
+          //2
+          let fetchRequest =
+            NSFetchRequest<CDFartEntry>(entityName: "CDFartEntry")
+          
+          //3
+          do {
+           entries = try managedContext.fetch(fetchRequest)
+          } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+          }
+           
+           let alreadyContains = entries.contains(where: { (c : CDFartEntry) -> Bool in
+            return c.timestamp == entry.timestamp
+           })
+           
+           if alreadyContains {
+               return
+           }
+        
+        
         let newEntry = CDFartEntry(context: managedContext)
         managedContext.insert(newEntry)
         newEntry.timestamp = entry.timestamp
 
         self.saveData()
+        
+        
+        // Send to friends if enabled
+        if UserDefaults.standard.bool(forKey: Constants.kAutoTextsEnabled) {
+              sendFartsToFriendsDelegate?.sendTo(entry: entry)
+        }
+    }
+    
+    func insertNewContactNumber(entry : ContactNumber) {
+        
+        
+        guard let appDelegate =
+          UIApplication.shared.delegate as? AppDelegate else {
+          return
+        }
+        
+        var entries : [CDContactNumber] = []
+             
+    let managedContext =
+               appDelegate.persistentContainer.viewContext
+ 
+       //2
+       let fetchRequest =
+         NSFetchRequest<CDContactNumber>(entityName: "CDContactNumber")
+       
+       //3
+       do {
+        entries = try managedContext.fetch(fetchRequest)
+       } catch let error as NSError {
+         print("Could not fetch. \(error), \(error.userInfo)")
+       }
+        
+        let alreadyContains = entries.contains(where: { (c : CDContactNumber) -> Bool in
+            return c.phoneNumber == entry.phoneNumber
+        })
+        
+        if alreadyContains {
+            return
+        }
+
+
+        let newEntry = CDContactNumber(context: managedContext)
+        managedContext.insert(newEntry)
+        newEntry.phoneNumber = entry.phoneNumber
+        newEntry.name = entry.name
+
+        self.saveData()
+
     }
     
     func removeAll() {
@@ -68,6 +142,36 @@ class FLDataManager {
         
         self.saveData()
     }
+    
+    func removeAllContactNumbers() {
+        
+        var entries : [CDContactNumber] = []
+        
+              guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                             return
+                  }
+                    
+                    let managedContext =
+                      appDelegate.persistentContainer.viewContext
+        
+              //2
+              let fetchRequest =
+                NSFetchRequest<CDContactNumber>(entityName: "CDContactNumber")
+              
+              //3
+              do {
+               entries = try managedContext.fetch(fetchRequest)
+              } catch let error as NSError {
+                print("Could not fetch. \(error), \(error.userInfo)")
+              }
+        
+        for entry in entries {
+            managedContext.delete(entry)
+        }
+        
+        self.saveData()
+    }
+    
     
     func deleteEntry(entry: FartEntry) {
         
@@ -135,6 +239,38 @@ class FLDataManager {
         return fartEntries
     }
     
+      var currentContactNumbers : [ContactNumber] {
+          
+          var entries : [CDContactNumber] = []
+          
+          guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                         return []
+              }
+                
+                let managedContext =
+                  appDelegate.persistentContainer.viewContext
+    
+          //2
+          let fetchRequest =
+            NSFetchRequest<CDContactNumber>(entityName: "CDContactNumber")
+          
+          //3
+          do {
+           entries = try managedContext.fetch(fetchRequest)
+          } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+          }
+          
+          var numbers : [ContactNumber] = []
+          
+          for c in entries {
+            numbers.append(c.valueObject!)
+          }
+          
+          
+          return numbers
+      }
+    
 }
 
 //MARK: - FLDataManagerDeletate
@@ -147,5 +283,7 @@ extension FLDataManager : FLDataManagerDelegate {
         
         let now = Date()
         self.insertNewFartEntry(entry: FartEntry(timestamp: now, confidence: confidence))
+        
+    
      }
 }
