@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if let path = Bundle.main.path(forResource: "Info", ofType: "plist"), let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
+            Constants.kTwilioAccountID = dict["TWILIO-API-KEY"] as! String
+            Constants.kTwilioPhoneNumber = dict["TWILIO-PHONE-NUMBER"] as! String
+            Constants.kTwilioAccountToken = dict["TWILIO-TOKEN"] as! String
+        }
+        
+        
+        
+        
+        
         return true
     }
 

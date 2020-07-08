@@ -118,7 +118,7 @@ class FLSettingsViewController : UIViewController, UITextFieldDelegate {
     
     @objc func didTapInfoButton() {
         
-        let alert = UIAlertController(title: nil, message: "When Fartlogger automatically sends a text. The below-entered name will be included in the message", preferredStyle: .alert)
+        let alert = UIAlertController(title: nil, message: "When Fartlogger automatically sends a text, the below-entered name will be included in the message", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler:nil))
         self.present(alert,animated: true)
         

@@ -13,12 +13,9 @@ extension FLSettingsViewController : SendFartToYourFriendsDelegate {
     
     func sendTo(entry: FartEntry) {
         
-         print("-------------- SENDING ENTRY" )
-        
-         let accountSID = Constants.kTwilioAccountID
-         let authToken = Constants.kTwilioAccountToken
-        
-
+       let accountSID = Constants.kTwilioAccountID
+       let authToken = Constants.kTwilioAccountToken
+    
        let formatter = DateFormatter()
        formatter.dateStyle = .short
        formatter.timeStyle = .medium
@@ -37,13 +34,12 @@ extension FLSettingsViewController : SendFartToYourFriendsDelegate {
         DispatchQueue.global(qos: .background).async {
         
         for number in numbers {
-          print("-------------- ABOUT TO SEND TEXT SENT TO " + number)
-        let parameters = ["From": "7192591279", "To": number , "Body": message]
+            
+            let parameters = ["From": Constants.kTwilioPhoneNumber, "To": number , "Body": message]
                 
             condition.lock()
                   Alamofire.AF.request(url, method: .post, parameters: parameters).authenticate(username: accountSID, password: authToken).responseJSON {
                       response in
-                      print("-------------- TEXT SENT TO " + number)
                     
                     condition.signal()
                   }
@@ -51,7 +47,6 @@ extension FLSettingsViewController : SendFartToYourFriendsDelegate {
             
             condition.unlock()
             
-
             RunLoop.main.run()
         }
         }
